@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><strong>Formulário Matrícula de Curso</strong></legend>
+        
+        <strong><label for=“pnome">Primeiro nome:</label></strong><br>
+        <input type="text" id="pnome" name="pnome"><br>
+        <strong><label for=“unome">Último nome:</label></strong><br>
+        <input type="text" id="unome" name="unome">
+    
+
+        <p><strong>Curso:</strong></p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+
+        <p><strong>Linguagens de programação de sua preferência:</strong></p>
+        <input type="checkbox" id="materia1" name="materia1" value="m1">
+        <label for="materia1">PHP</label><br>
+        <input type="checkbox" id="materia2" name="materia2" value="m2">
+        <label for="materia2">Java</label><br>
+        <input type="checkbox" id="materia3" name="materia3" value="m3">
+        <label for="materia3">Python</label>
+
+        <p></p>
+        <strong><label for="turno">Escolha um turno:</label></strong>
+        <select name="turno" id="turno">
+        <option value="Matutino">Matutino</option>
+        <option value="vespertino">Vespertino</option>
+        <option value="noturno">Noturno</option>
+        </select>
+        
+        <p></p>
+        <strong><label for="campus"> Escolha um câmpus mais proximo:</label></strong>
+        <input list="escolas" name="campus" id="campus">
+        <datalist id="escolas">
+        <option value="Chapecó">
+        <option value="Xanxerê">
+        <option value="Joinvile">
+        <option value="Florianópolis">
+        <option value="São Miguel do Oeste">
+        </datalist>
+        <br>
+        <button onclick="qualquercoisa">Enviar</button>
+    </fieldset>
+    
+    </form>    
+</body>
+</html>
